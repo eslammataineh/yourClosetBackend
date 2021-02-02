@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+.order-content {
+  background-image: linear-gradient(to bottom, #06010f 50%, #010002);
+  .order-con {
+    padding-top: 150px;
+    min-height: 100vh;
+    padding-bottom: 50px;
+
+    .orders {
+      padding-top: 15px;
+      background-color: transparent;
+      border: 1px solid #1b0333;
+      color: white;
+      width: 33.3%;
+      min-height: 40vh;
+      padding-bottom: 15px;
+      border-radius: 15px;
+
+      .name,
+      .phone {
+        margin-bottom: 20px;
+      }
+
+      .name span,
+      .phone span {
+        display: block;
+        color: yellow;
+      }
+    }
+    .noorder {
+      color: darkred;
+      font-size: 20px;
+    }
+  }
+  .up {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid rebeccapurple;
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    .fa-angle-up {
+      opacity: 0;
+      font-size: 24px;
+      color: rebeccapurple;
+      transform: translateY(13px);
+      animation: up 2s forwards infinite;
+    }
+  }
+}
+
+@keyframes up {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

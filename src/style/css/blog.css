@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blogfluid {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.blogfluid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.859);
+  width: 100%;
+  height: 100%;
+}
+
+.blogfluid .blogbackground {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogfluid .blogcon {
+  z-index: 2;
+  min-height: 100vh;
+}
+
+.blogfluid .blogcon .blogcontent {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 27px;
+}
+
+.blogfluid .blogcon .blogcontent p {
+  background-image: linear-gradient(130deg, #ffee00, #e0a5af, #3a055c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blogfluid .blogcon .blogcontent h3 {
+  text-transform: capitalize;
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  background-image: linear-gradient(130deg, #ffee00 15%, #e0a5af, #3a055c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blogfluid .blogcon .blogcontent h3::first-letter {
+  font-size: 5rem;
+}
+
+.blogfluid .blogcon .blogcontent .skintones {
+  padding-top: 150px;
+  text-align: left;
+  font-family: cursive;
+  margin-bottom: 80px;
+}
+
+.blogfluid .blogcon .blogcontent .skintones .skin {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.blogfluid .blogcon .blogcontent .skintones .skin p {
+  padding-bottom: 15px;
+  background-image: linear-gradient(130deg, #f8ea2a 15%, #e0a5af, #3a055c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blogfluid .blogcon .blogcontent .skintones .skin h4 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  background-image: linear-gradient(130deg, #d68ce9, #310231);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=blog.css.map */

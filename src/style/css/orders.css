@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.order-content {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #06010f), to(#010002));
+  background-image: linear-gradient(to bottom, #06010f 50%, #010002);
+}
+
+.order-content .order-con {
+  padding-top: 150px;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.order-content .order-con .orders {
+  padding-top: 15px;
+  background-color: transparent;
+  border: 1px solid #1b0333;
+  color: white;
+  width: 33.3%;
+  min-height: 40vh;
+  padding-bottom: 15px;
+  border-radius: 15px;
+}
+
+.order-content .order-con .orders .name,
+.order-content .order-con .orders .phone {
+  margin-bottom: 20px;
+}
+
+.order-content .order-con .orders .name span,
+.order-content .order-con .orders .phone span {
+  display: block;
+  color: yellow;
+}
+
+.order-content .order-con .noorder {
+  color: darkred;
+  font-size: 20px;
+}
+
+.order-content .up {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid rebeccapurple;
+  position: fixed;
+  bottom: 15%;
+  right: 3%;
+}
+
+.order-content .up .fa-angle-up {
+  opacity: 0;
+  font-size: 24px;
+  color: rebeccapurple;
+  -webkit-transform: translateY(13px);
+          transform: translateY(13px);
+  -webkit-animation: up 2s forwards infinite;
+          animation: up 2s forwards infinite;
+}
+
+@-webkit-keyframes up {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=orders.css.map */

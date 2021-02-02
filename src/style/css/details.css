@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.det-content {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #06010f), to(#010002));
+  background-image: linear-gradient(to bottom, #06010f 50%, #010002);
+}
+
+.det-content .det-con {
+  min-height: 92vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.det-content .det-con .img {
+  width: 30%;
+  height: 73vh;
+  margin-bottom: 80px;
+}
+
+.det-content .det-con .img img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid yellow;
+}
+
+.det-content .det-con .orderdetails {
+  padding-left: 25px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.det-content .det-con .orderdetails .details .description {
+  background-image: linear-gradient(130deg, #ffee00, #e0a5af, #3a055c 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.det-content .det-con .orderdetails .details .description p {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.det-content .det-con .orderdetails .details form {
+  background-image: linear-gradient(130deg, #ffee00, #e0a5af, #3a055c 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.det-content .det-con .orderdetails .details form .d_select {
+  width: 300px;
+  height: 40px;
+  margin: 10px 7px 0 0;
+  border: 2px solid rebeccapurple;
+  outline: none;
+  border-radius: 15px;
+  padding: 2px 15px;
+  background-image: linear-gradient(130deg, #fff241, #e0a5af, #3a055c 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.det-content .det-con .orderdetails .details form input[type="number"] {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rebeccapurple;
+  border-radius: 15px;
+  width: 300px;
+  height: 40px;
+  padding: 1px 15px;
+  color: white;
+  -webkit-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.det-content .det-con .orderdetails .details form input[type="number"]:focus {
+  border-color: rgba(255, 255, 0, 0.815);
+}
+
+.det-content .det-con .orderdetails .details form input[type="text"] {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rebeccapurple;
+  border-radius: 15px;
+  width: 300px;
+  color: white;
+  height: 40px;
+  padding: 1px 15px;
+  -webkit-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.det-content .det-con .orderdetails .details form input[type="text"]:focus {
+  border-color: rgba(255, 255, 0, 0.815);
+}
+
+.det-content .det-con .orderdetails .details form .addtocard {
+  padding-top: 70px;
+}
+
+.det-content .det-con .orderdetails .details form .addtocard button {
+  width: 300px;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid rebeccapurple;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(130deg, #f8eb32, #e0a5af, #3a055c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.det-content .det-con .orderdetails .details form .addtocard button:hover {
+  border-color: #f8ec3d;
+}
+
+.det-content .det-con .orderdetails .details form .addtocard button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  position: absolute;
+  -webkit-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+  background-image: linear-gradient(130deg, transparent, #280a46, transparent);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.det-content .det-con .orderdetails .details form .addtocard button::after:focus {
+  border-color: rgba(255, 255, 0, 0.815);
+}
+
+.det-content .det-con .orderdetails .details form .addtocard button:hover::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.det-content .errors {
+  font-size: 21px;
+  background-image: linear-gradient(-130deg, #ff0800 50%, #e92502, #f3c2bc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 350px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 3rem;
+  left: 29%;
+}
+/*# sourceMappingURL=details.css.map */
