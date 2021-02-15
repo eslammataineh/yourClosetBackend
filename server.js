@@ -38,20 +38,22 @@ let Signin = require("./routes/user");
 let Admin = require("./routes/admin");
 let Pants = require("./routes/pants");
 let Dress = require("./routes/dresses");
-//let Useredit = require("./routes/useredit");
 let Order = require("./routes/order");
 let Hijab = require("./routes/hijab");
-
+let Blog = require("./routes/blog");
+let Contact = require("./routes/contact");
+//let Useredit = require("./routes/useredit");
 app.use("/clothes", Clothes);
 app.use("/category", Categorey);
 app.use("/", Signin);
 app.use("/admin", Admin);
 app.use("/pants", Pants);
 app.use("/dresses", Dress);
-//app.use("/useredit", Useredit);
 app.use("/order", Order);
 app.use("/hijab", Hijab);
-
+app.use("/blog", Blog);
+app.use("/contact", Contact);
+//app.use("/useredit", Useredit);
 app.post("/UploadPic", function (req, res) {
   try {
     if (!req.files.file) {
